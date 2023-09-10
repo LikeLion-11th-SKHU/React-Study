@@ -1,9 +1,9 @@
 # React-Study
 
 ## 👤 Members
-| [김은혜](https://github.com/gracekim527) |[강민정](https://github.com/staccato20) | [김시은](https://github.com/kimsieun99) | [박지균](https://github.com/jivirus) | [오동재](https://github.com/djdongjae) |
-|:---:|:---:|:---:|:---:|:---:|
-| <img src="https://github.com/gracekim527.png" width="150"> | <img src="https://github.com/staccato20.png" width="150"> | <img src="https://github.com/kimsieun99.png" width="150"> | <img src="https://github.com/jivirus.png" width="150"> | <img src="https://github.com/djdongjae.png" width="150">
+| [김은혜](https://github.com/gracekim527) |[강민정](https://github.com/staccato20) | [김시은](https://github.com/kimsieun99) | [박지균](https://github.com/jivirus) |
+|:---:|:---:|:---:|:---:|
+| <img src="https://github.com/gracekim527.png" width="150"> | <img src="https://github.com/staccato20.png" width="150"> | <img src="https://github.com/kimsieun99.png" width="150"> | <img src="https://github.com/jivirus.png" width="150"> |
 
 ## 📌 Rule
 1. 매주 [진도표](#curriculum)대로 강의 수강
