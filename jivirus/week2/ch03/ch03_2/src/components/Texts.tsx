@@ -1,5 +1,6 @@
 import type {FC, DetailedHTMLProps, HTMLAttributes} from 'react'
 import { makeClassName } from './textUtil'
+import { type } from 'os'
 
 type TextProps = DetailedHTMLProps<
   HTMLAttributes<HTMLParagraphElement>,
@@ -54,8 +55,10 @@ export type ParagraphProps = SummaryProps & {}
 export const Paragraph: FC<ParagraphProps> = ({
   className: _className,
   numberOfLines,
+  ...props
 }) => {
   const className = makeClassName(
+    'font-nomal text-base whitespace-pre-line',
     _className,
     numberOfLines,
   )

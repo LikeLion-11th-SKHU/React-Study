@@ -9,8 +9,8 @@ export default function TextTest() {
     <div>
       <Title>TextsTest</Title>
       <div>
-        <Title className="text-blue-600">{D.randomTitleText}</Title>
-        <Subtitle className="text-blue-400">{D.randomSentence}</Subtitle>
+        <Title className="text-blue-600">{D.randomTitleText()}</Title>
+        <Subtitle className="text-blue-400">{D.randomSentence()}</Subtitle>
         <p className="text-xl italic text-center text-gray-900 text-bold">
           {D.randomName()}</p>
         <Paragraph numberOfLines={5}>{paragraphs}</Paragraph>
