@@ -4,6 +4,7 @@ import type {
   ButtonHTMLAttributes,
   PropsWithChildren,
 } from 'react'
+
 export type ReactButtonProps = DetailedHTMLProps<
   ButtonHTMLAttributes<HTMLButtonElement>,
   HTMLButtonElement
@@ -15,6 +16,6 @@ export const Button: FC<PropsWithChildren<ButtonProps>> = ({
   className: _className,
   ...buttonProps
 }) => {
-  const className = ['btn', _className].join('')
+  const className = ['btn', _className].join(' ')
   return <button {...buttonProps} className={className} />
 }

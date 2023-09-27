@@ -1,4 +1,4 @@
-export default function CopyMe() {
+export default function ModalTest() {
   return (
     <section className="mt-4">
       <h2 className="text-5xl font-bold text-center">CopyMe</h2>

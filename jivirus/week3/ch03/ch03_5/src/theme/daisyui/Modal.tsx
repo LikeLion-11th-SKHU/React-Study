@@ -4,10 +4,10 @@ import {Div} from '../../components'
 import {Icon} from './Icon'
 
 export type ModalProps = ReactDivProps & {
-open?: boolean
+  open?: boolean
 }
 export const Modal: FC<ModalProps> = ({open, className: _className, ...props}) => {
-  const className = ['modal', open ? 'modal-open' : '', _className].join('')
+  const className = ['modal', open ? 'modal-open' : '', _className].join(' ')
   return <div {...props} className={className} />
 }
 export type ModalContentProps = ReactDivProps & {
@@ -38,6 +38,6 @@ export const ModalContent: FC<ModalContentProps> = ({
 
 export type ModalActionProps = ReactDivProps & {}
 export const ModalAction: FC<ModalActionProps> = ({className: _className, ...props}) => {
-  const className = ['modal-action', _className].join('')
+  const className = ['modal-action', _className].join(' ')
   return <div {...props} className={className} />
 }

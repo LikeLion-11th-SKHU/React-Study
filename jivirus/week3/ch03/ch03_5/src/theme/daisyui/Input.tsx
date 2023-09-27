@@ -11,6 +11,6 @@ export const Input: FC<inputProps> = ({
   className: _className,
   ...inputProps
 }) => {
-  const className = ['input', _className].join('')
+  const className = ['input', _className].join(' ')
   return <input {...inputProps} className={className} />
 }

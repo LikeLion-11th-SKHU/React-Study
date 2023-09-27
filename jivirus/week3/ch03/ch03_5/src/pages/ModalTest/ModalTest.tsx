@@ -1,6 +1,6 @@
-import { Title, Subtitle } from '../components'
-import { Modal, ModalContent, ModalAction, Button } from '../theme/daisyui'
-import * as D from '../data'
+import { Title, Subtitle } from '../../components'
+import { Modal, ModalContent, ModalAction, Button } from '../../theme/daisyui'
+import * as D from '../../data'
 
 export default function ModalTest() {
   const open = true // 혹은 false

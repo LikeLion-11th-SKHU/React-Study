@@ -14,8 +14,9 @@ export const Icon: FC<IconProps> = ({
   iconClassName,
   className,
   ...buttonProps
-}) => {
-  const btnClassName = ['btn-circle', className].join('')
+}) => 
+{
+  const btnClassName = ['btn-circle', className].join(' ')
   return (
     <Button {...buttonProps} className={btnClassName}>
       <CIcon className={iconClassName} name={name} />
