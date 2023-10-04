@@ -7,9 +7,8 @@ type TextProps = DetailedHTMLProps<
 >
 
 export type TitleProps = TextProps & {
-  number0fLines?: number
+  numberOfLines?: number
 }
-
 export const Title: FC<TitleProps> = ({
   className: _className,
   numberOfLines,
@@ -41,7 +40,6 @@ export type SummaryProps = SubtitleProps & {}
 export const Summary: FC<SummaryProps> = ({
   className: _className,
   numberOfLines,
-
   ...props
 }) => {
   const className = makeClassName(
@@ -51,6 +49,7 @@ export const Summary: FC<SummaryProps> = ({
   )
   return <p {...props} className={className} />
 }
+
 export type ParagraphProps = SummaryProps & {}
 export const Paragraph: FC<ParagraphProps> = ({
   className: _className,

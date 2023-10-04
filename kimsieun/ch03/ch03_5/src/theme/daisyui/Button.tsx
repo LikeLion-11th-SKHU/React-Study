@@ -1,9 +1,5 @@
-import type {
-  FC,
-  DetailedHTMLProps,
-  ButtonHTMLAttributes,
-  PropsWithChildren,
-} from 'react'
+import type {FC, DetailedHTMLProps, ButtonHTMLAttributes, PropsWithChildren} from 'react'
+
 export type ReactButtonProps = DetailedHTMLProps<
   ButtonHTMLAttributes<HTMLButtonElement>,
   HTMLButtonElement

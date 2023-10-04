@@ -1,4 +1,4 @@
-import { Button } from '../../theme/daisyui'
+import {Button} from '../../theme/daisyui'
 
 export default function Basic() {
   return (

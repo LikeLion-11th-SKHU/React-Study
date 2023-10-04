@@ -1,6 +1,6 @@
 export type MinMaxWidthHeight = {
-  minWidth?: string;
-  maxwidth?: string;
-  minHeight?: string;
-  maxHeight?: string;
-};
+  minWidth?: string
+  maxwidth?: string
+  minHeight?: string
+  maxHeight?: string
+}
