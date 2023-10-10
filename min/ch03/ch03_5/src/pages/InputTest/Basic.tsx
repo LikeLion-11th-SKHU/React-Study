@@ -1,4 +1,4 @@
-import {Input} from '../../theme/daisyui'
+import { Input } from "../../theme/daisyui";
 
 export default function Basic() {
   return (
@@ -9,5 +9,5 @@ export default function Basic() {
         <Input className="input-primary" />
       </div>
     </section>
-  )
+  );
 }

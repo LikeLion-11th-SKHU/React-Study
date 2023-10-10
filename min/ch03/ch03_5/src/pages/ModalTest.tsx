@@ -3,7 +3,7 @@ import { Modal, ModalContent, ModalAction, Button } from "../theme/daisyui";
 import * as D from "../data";
 
 export default function ModalTest() {
-  const open = true; // 혹은 false
+  const open = false; // 혹은 false
   const closeClicked = () => {
     alert("closeClicked");
   };

@@ -1,4 +1,4 @@
-import {Input} from '../../theme/daisyui'
+import { Input } from "../../theme/daisyui";
 
 export default function Color() {
   return (
@@ -35,5 +35,5 @@ export default function Color() {
         </div>
       </div>
     </section>
-  )
+  );
 }

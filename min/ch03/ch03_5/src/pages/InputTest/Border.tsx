@@ -1,4 +1,4 @@
-import {Input} from '../../theme/daisyui'
+import { Input } from "../../theme/daisyui";
 
 export default function Border() {
   return (
@@ -15,5 +15,5 @@ export default function Border() {
         </div>
       </div>
     </section>
-  )
+  );
 }
