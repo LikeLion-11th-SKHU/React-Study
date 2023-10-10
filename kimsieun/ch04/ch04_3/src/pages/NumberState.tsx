@@ -1,7 +1,6 @@
 import {useState, useCallback} from 'react'
 import {Title} from '../components'
 import {Icon} from '../theme/daisyui'
-import React from 'react'
 
 export default function NumberState() {
   const [count, setCount] = useState<number>(0)

@@ -2,7 +2,6 @@ import type {ChangeEvent} from 'react'
 import {useMemo, useCallback, useState} from 'react'
 import {Title, Subtitle} from '../components'
 import * as D from '../data'
-import React from 'react'
 
 export default function RadioInputTest() {
   const jobTitles = useMemo(() => D.makeArray(4).map(D.randomJobTitle), [])

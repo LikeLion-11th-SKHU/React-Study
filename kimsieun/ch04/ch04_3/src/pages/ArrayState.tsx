@@ -2,7 +2,6 @@ import {useCallback, useState, useMemo} from 'react'
 import {Title, Div} from '../components'
 import {Icon} from '../theme/daisyui'
 import * as D from '../data'
-import React from 'react'
 
 export default function ArrayState() {
   const [images, setImages] = useState<string[]>([])

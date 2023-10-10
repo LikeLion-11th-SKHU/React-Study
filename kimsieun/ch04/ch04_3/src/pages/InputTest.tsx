@@ -2,7 +2,6 @@ import type {ChangeEvent} from 'react'
 import {useState, useCallback} from 'react'
 import {Title} from '../components'
 import {Input} from '../theme/daisyui'
-import React from 'react'
 
 export default function InputTest() {
   const [value, setValue] = useState<string>('')

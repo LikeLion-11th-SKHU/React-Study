@@ -6,7 +6,6 @@ import HigherOrderRadioInputTest from './pages/HigherOrderRadioInputTest'
 import BasicForm from './pages/BasicForm'
 import ObjectState from './pages/ObjectState'
 import ArrayState from './pages/ArrayState'
-import React from 'react'
 
 export default function App() {
   return (

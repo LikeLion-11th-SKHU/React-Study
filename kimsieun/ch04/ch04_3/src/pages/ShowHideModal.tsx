@@ -3,7 +3,6 @@ import {Title, Subtitle} from '../components'
 import {Button, Modal, ModalContent, ModalAction} from '../theme/daisyui'
 import {useToggle} from '../hooks'
 import * as D from '../data'
-import React from 'react'
 
 export default function ShowtideModal() {
   const [open, toggleOpen] = useToggle(false)

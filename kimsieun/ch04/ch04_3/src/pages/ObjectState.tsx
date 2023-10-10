@@ -1,7 +1,6 @@
 import type {FormEvent, ChangeEvent} from 'react'
 import {useCallback, useState} from 'react'
 import {Title} from '../components'
-import React from 'react'
 
 type FormType = {
   name: string
