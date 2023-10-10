@@ -1,4 +1,4 @@
-import {Input} from '../../theme/daisyui'
+import { Input } from "../../theme/daisyui";
 
 export default function Size() {
   return (
@@ -23,5 +23,5 @@ export default function Size() {
         </div>
       </div>
     </section>
-  )
+  );
 }
