@@ -21,6 +21,6 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "../ch05_3/src"
+    "src"
   ]
 }
