@@ -1,16 +1,25 @@
-import {Provider as ReduxProvider} from 'react-redux'
-import {useStore} from './store'
-import { DndProvider } from 'react-dnd'
-import { HTML5Backend } from 'react-dnd-html5-backend'
-import Board from './pages/Board'
+import logo from './logo.svg';
+import './App.css';
 
-export default function App() {
-  const store = useStore()
+function App() {
   return (
-    <ReduxProvider store={store}>
-      <DndProvider backend={HTML5Backend}>
-        <Board />
-      </DndProvider>
-    </ReduxProvider>
-  )
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
+
+export default App;
