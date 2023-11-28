@@ -18,7 +18,7 @@ const connectCB = async (db: M.MongoDB) => {
     const findOneResult = await user.findOneAndUpdate(
       {name: 'John'},
       {$set: {age: 66}},
-      {returnDocument: 'after'} // 'before' 와 'after' 두 개 값 중 하나
+      {returnDocument: 'after'}
     )
     console.log('findOneResult', findOneResult)
   } catch (e) {

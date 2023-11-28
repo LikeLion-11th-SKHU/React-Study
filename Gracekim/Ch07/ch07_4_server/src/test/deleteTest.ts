@@ -19,6 +19,7 @@ const connectCB = async (db: M.MongoDB) => {
     if (e instanceof Error) console.log(e.message)
   }
 }
+
 const deleteTest = () => {
   M.connectAndUseDB(connectCB, 'Ch07')
 }

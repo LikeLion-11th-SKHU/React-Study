@@ -3,7 +3,6 @@ import * as M from '../mongodb'
 const connectCB = async (db: M.MongoDB) => {
   try {
     const user = db.collection('user')
-
     const one = await user.findOne({})
     console.log('one', one)
 
@@ -13,6 +12,7 @@ const connectCB = async (db: M.MongoDB) => {
     if (e instanceof Error) console.log(e.message)
   }
 }
+
 const findTest = () => {
   M.connectAndUseDB(connectCB, 'Ch07')
 }

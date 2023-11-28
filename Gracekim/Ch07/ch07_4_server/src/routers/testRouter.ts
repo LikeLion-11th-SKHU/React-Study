@@ -42,25 +42,25 @@ export const testRouter = (...args: any[]) => {
       }
     })
     .put('/:id', async (req, res) => {
-      // id값을 가진 데이터의 수정을 요청하는 경우
-      const {id} = req.params
-      const {body} = req
+      // id값을 가진 데이터의 수정을 요청하는 경우 
+      const { id } = req.params;
+      const { body } = req;
       try {
         const updateResult = await test.findOneAndUpdate(
-          {id},
-          {$set: body},
+          { id },
+          { $set: body },
           {
-            returnDocument: 'after'
+            returnDocument: 'after',
           }
-        )
-
+        );
+    
         if (updateResult && updateResult.value) {
-          res.json({ok: true, body: updateResult.value})
+          res.json({ ok: true, body: updateResult.value });
         } else {
-          res.json({ok: false, errorMessage: 'Document not found or not updated.'})
+          res.json({ ok: false, errorMessage: 'Document not found or not updated.' });
         }
       } catch (e) {
-        if (e instanceof Error) res.json({ok: false, errorMessage: e.message})
+        if (e instanceof Error) res.json({ ok: false, errorMessage: e.message });
       }
     })
     .delete('/:id', async (req, res) => {

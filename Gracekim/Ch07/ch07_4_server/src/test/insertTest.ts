@@ -5,8 +5,8 @@ const connectCB = async (db: M.MongoDB) => {
     const user = db.collection('user')
     try {
       await user.drop()
-    } catch (e) {
-      // ignore error
+    } catch(e) {
+      // 오류 무시
     }
 
     const jack = await user.insertOne({name: 'Jack', age: 32})
