@@ -42,6 +42,7 @@ export const testRouter = (...args: any[]) => {
       }
     })
     .put('/:id', async (req, res) => {
+      // id값을 가진 데이터의 수정을 요청하는 경우
       const {id} = req.params
       const {body} = req
       try {
@@ -52,7 +53,12 @@ export const testRouter = (...args: any[]) => {
             returnDocument: 'after'
           }
         )
-        res.json({ok: true, body: updateResult.value})
+
+        if (updateResult && updateResult.value) {
+          res.json({ok: true, body: updateResult.value})
+        } else {
+          res.json({ok: false, errorMessage: 'Document not found or not updated.'})
+        }
       } catch (e) {
         if (e instanceof Error) res.json({ok: false, errorMessage: e.message})
       }
